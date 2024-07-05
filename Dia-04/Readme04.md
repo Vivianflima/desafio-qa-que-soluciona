@@ -96,11 +96,11 @@ if __name__ == "__main__":
 ```
 ## Como Executar
 
-1. Salve o código em um arquivo, por exemplo, `notificacoes.py`.
+1. Salve o código em um arquivo, por exemplo, `activity_notifications.py`.
 2. Abra o terminal e navegue até o diretório onde o arquivo está salvo.
 3. Execute o script com o comando:
     ```sh
-    python notificacoes.py
+    python activity_notifications.py.py
     ```
 4. O script irá executar os testes incorporados e exibirá a saída correspondente.
 
@@ -108,13 +108,13 @@ if __name__ == "__main__":
 ## Como Testar o Script com Entrada do Usuário
 
 1. **Executar o Script:**
-   - Salve o código em um arquivo, por exemplo, `notificacoes.py`.
+   - Salve o código em um arquivo, por exemplo, `activity_notifications.py`.
    - Abra um terminal e navegue até o diretório onde o arquivo está salvo.
 
 2. **Iniciar a Execução:**
    - Execute o script Python com o comando:
      ```
-     python notificacoes.py
+     python activity_notifications.py
      ```
 
 3. **Interagir com o Script:**
