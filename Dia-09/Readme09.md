@@ -4,7 +4,20 @@
 Para duas strings A e B, definimos a similaridade das strings como o comprimento do prefixo mais longo comum a ambas as strings. Neste desafio, você deve calcular a soma das similaridades de uma string S com cada um de seus sufixos.
 
 ## Como o desafio foi solucionado
-A solução implementa uma função `common_prefix_length` que calcula o comprimento do prefixo comum mais longo entre duas strings. A função principal `similarity` calcula a soma das similaridades da string original com cada um de seus sufixos, chamando `common_prefix_length` para cada sufixo gerado a partir da string original.
+
+Para resolver o desafio, foi implementada uma função `common_prefix_length` que calcula o comprimento do prefixo comum mais longo entre duas strings. Esta função percorre os caracteres das duas strings em paralelo e conta quantos caracteres consecutivos são iguais, até encontrar uma diferença ou chegar ao fim da menor das duas strings.
+
+A função principal, `similarity`, é responsável por calcular a soma das similaridades da string original com cada um de seus sufixos. Ela faz isso seguindo estes passos:
+
+1. **Iteração sobre a string original**: 
+   - A função itera sobre a string, gerando todos os seus sufixos. 
+   - Um sufixo é obtido removendo-se os primeiros caracteres da string original.
+2. **Cálculo da similaridade**: 
+   - Para cada sufixo gerado, a função chama `common_prefix_length` para calcular o comprimento do prefixo comum mais longo entre a string original e o sufixo atual.
+3. **Soma das similaridades**: 
+   - Todos os comprimentos dos prefixos comuns calculados são somados para obter a soma total das similaridades.
+
+Essa abordagem garante que todas as similaridades entre a string original e seus sufixos sejam contabilizadas corretamente, resultando na soma total desejada.
 
 ## Como executar o código
 1. Salve o código no arquivo `similarity.py`.
